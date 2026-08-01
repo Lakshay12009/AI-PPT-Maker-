@@ -105,7 +105,7 @@ user_input = st.text_area("Write prompt & click Enter")
 
 if(user_input):
   with tab1:
-    if st.button("Click to generate Image",Key ="Image-Button"):
+    if st.button("Click to Generate Image",Key = "Image-Button"):
       with st.spinner("Running Agent"):
         try:
           url = generate_image(user_input)
