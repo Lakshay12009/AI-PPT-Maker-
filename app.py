@@ -135,7 +135,7 @@ if(user_input):
     if st.button("Click To Generate PPT",key = "PPt-Button"):
       with st.spinner("Running Agent"):
         try:
-          code = run-agent(leader_agent,user_input)
+          code = run_agent(leader_agent,user_input)
           st.html(code,width="stretch",unsafe_allow_javascript=True)
 
           if st.download_button(label = "DOWNLOAD PPT",
