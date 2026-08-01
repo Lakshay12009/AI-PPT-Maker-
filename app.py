@@ -16,9 +16,8 @@ st.header("""User can generate, PPT , Image ,and fetch latest news """)
 
 st.sidebar.title("GIve API Keys")
 
-GOOGLE_API_KEY = "AQ.Ab8RN6JkelCPnQzuhgGfhEwlHwgedcMQ_6dJfizF6ltLo7xxtQ"
-TAVILY_API_KEY = "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"
-
+GOOGLE_API_KEY = st.sidebar.text_input("GOOGLE_API_KEY",type="password")
+TAVILY_API_KEY = st.sidebar.text_input("TAVILY_API_KEY",type="password")
 ALL_API = [GOOGLE_API_KEY,TAVILY_API_KEY]
 
 if not all(ALL_API):
