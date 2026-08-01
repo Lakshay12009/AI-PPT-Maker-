@@ -9,6 +9,7 @@ import os
 import time
 import numpy as np
 
+st.set_page_config(layout = "wide")
 #===========STEP 2 Load ENV and API KEYS============
 st.title("Agentic PPT Generator")
 st.header("""User can generate, PPT , Image ,and fetch latest news """)
@@ -102,7 +103,7 @@ tab1,tab2,tab3 = st.tabs(["Generate Image",
                          "Generate PPT"])
 user_input = st.text_area("Write prompt & click Enter")
 
-if(user_input) & (leader_agent):
+if(user_input):
   with tab1:
     if st.button("Click to generate Image",Key ="Image-Button"):
       with st.spinner("Running Agent"):
