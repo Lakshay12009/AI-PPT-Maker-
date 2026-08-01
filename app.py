@@ -40,7 +40,7 @@ model = ChatGoogleGenerativeAI(
   model = selected_model,
   google_api_keys = GOOGLE_API_KEY )
 
-  else:
+else:
   st.sidebar.info("Try valid API-Keys")
 
 #===========STEP 3 BACKEND====================
@@ -92,7 +92,7 @@ if all(ALL_API):
     tools = [ search_latest_info,
              # generate_image
           ])
-  leader_agent
+  #leader_agent
 else:
   st.info("Give API-Keys first to load Agent")
 
