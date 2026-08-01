@@ -36,9 +36,9 @@ elif all(ALL_API):
   
   selected_model = st.selectbox("Select-Model.options = options")
 
-model = ChatGoogleGenerativeAI(
-  model = selected_model,
-  google_api_keys = GOOGLE_API_KEY )
+  model = ChatGoogleGenerativeAI(
+    model = selected_model,
+    google_api_keys = GOOGLE_API_KEY )
 
 else:
   st.sidebar.info("Try valid API-Keys")
