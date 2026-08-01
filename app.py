@@ -23,7 +23,7 @@ ALL_API = [GOOGLE_API_KEY,TAVILY_API_KEY]
 if not all(ALL_API):
   st.sidebar.error("Must Pass All API-Keys")
   url = "https://aistudio.google.com/api-keys"
-  st.markdown (f"Get Googl AP key-{ur1}")
+  st.markdown (f"Get Google AP key-{ur1}")
   
   url ="https://app.tavily.com/playground"
   st.markdown (f"Get Tavily AP key-{ur1}")
