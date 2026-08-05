@@ -1,10 +1,7 @@
-langchain
-langchain-google-genai 
-langchain-groq 
-tavily-python 
-pytesseract 
 streamlit
-pandas 
-numpy
-matplotlib
-seaborn
+langchain
+langchain-community
+langchain-core
+langchain-google-genai
+pypdf
+python-dotenv
